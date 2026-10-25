@@ -49,16 +49,38 @@
     <Compile Include="Figuras\FlorMargarita.cs" />
     <Compile Include="Figuras\Hexagono.cs" />
     <Compile Include="Figuras\PoligonoEstrellado.cs" />
+    <Compile Include="FrmFiguras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFiguras.Designer.cs">
+      <DependentUpon>FrmFiguras.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmGeoLab.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmGeoLab.Designer.cs">
       <DependentUpon>FrmGeoLab.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmVectores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVectores.Designer.cs">
+      <DependentUpon>FrmVectores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matematicas\Geometria.cs" />
+    <Compile Include="Matematicas\Proyeccion.cs" />
+    <Compile Include="Matematicas\Transformaciones.cs" />
+    <Compile Include="Matematicas\Vector2D.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmFiguras.resx">
+      <DependentUpon>FrmFiguras.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmGeoLab.resx">
       <DependentUpon>FrmGeoLab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVectores.resx">
+      <DependentUpon>FrmVectores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -82,8 +104,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Matematicas\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -20,7 +20,8 @@ namespace GeoLab2D.Matematicas
 
         public double Direccion()
         {
-            return Math.Atan2(Y, X);
+            return Math.Atan2(Y, X) * (180 / Math.PI);
+
         }
 
         public static double ProductoPunto(Vector2D v1, Vector2D v2)

@@ -7,6 +7,8 @@ namespace GeoLab2D.Matematicas
     {
         public static double CalcularPerimetro(List<Vector2D> vertices)
         {
+            if (vertices == null || vertices.Count < 2)
+                return 0;
             double perimetro = 0;
             int n = vertices.Count;
             for (int i = 0; i < n; i++)
@@ -22,6 +24,8 @@ namespace GeoLab2D.Matematicas
 
         public static double CalcularArea(List<Vector2D> vertices)
         {
+            if (vertices == null || vertices.Count < 3)
+                return 0;
             double suma = 0;
             int n = vertices.Count;
             for (int i = 0; i < n; i++)
@@ -40,6 +44,8 @@ namespace GeoLab2D.Matematicas
 
         public static bool PuntoEnPoligono(Vector2D punto, List<Vector2D> vertices)
         {
+            if (vertices == null || vertices.Count < 3)
+                return false;
             int n = vertices.Count;
             bool dentro = false;
             for (int i = 0, j = n - 1; i < n; j = i++)

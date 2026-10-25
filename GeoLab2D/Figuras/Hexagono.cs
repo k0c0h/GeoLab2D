@@ -35,10 +35,10 @@ namespace GeoLab2D.Figuras
         // Calcular los seis vertices
         public PointF[] CalcularVertices()
         {
-            PointF[] vertices = new PointF[6];
-
             if (lado <= 0)
-                return vertices;
+                return new PointF[0];
+
+            PointF[] vertices = new PointF[6];
 
             for (int i = 0; i < 6; i++)
             {
